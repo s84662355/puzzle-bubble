@@ -3,10 +3,8 @@
 本项目当前采用“UI + Auth + Gateway + Game(Room 合并)”架构，所有服务启动配置统一从 JSON 文件读取。
 
 ## 演示视频
-
-<video src="./video.mp4" controls width="960">
-  你的 Markdown 渲染器不支持 video 标签，可直接打开项目根目录的 video.mp4。
-</video>
+[![演示视频标题]](./video.mp4)
+ 
 
 ## 1. 项目结构与职责
 

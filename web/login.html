@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puzzle Bubble - 登录</title>
+  <link rel="stylesheet" href="/assets/app.css" />
+</head>
+<body class="bg-login">
+  <main class="page">
+    <section class="card login-card">
+      <p class="tag">GAME GATEWAY</p>
+      <h1 class="title">玩家登录</h1>
+      <p class="hint">登录后进入大厅创建或加入房间。</p>
+      <form id="loginForm" class="form">
+        <label>账号</label>
+        <input id="username" type="text" placeholder="例如: u1001" required />
+        <label>密码</label>
+        <input id="password" type="password" placeholder="任意非空" required />
+        <button type="submit" class="btn">进入大厅</button>
+      </form>
+      <pre id="errBox" class="err"></pre>
+    </section>
+  </main>
+  <script src="/assets/login.js"></script>
+</body>
+</html>

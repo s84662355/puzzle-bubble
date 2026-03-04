@@ -1,0 +1,4 @@
+{
+  "dsn": "root:123456@tcp(127.0.0.1:3306)/game?charset=utf8mb4&parseTime=True&loc=Local",
+  "file": "db/schema_core.sql"
+}

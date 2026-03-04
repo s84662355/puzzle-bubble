@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puzzle Bubble - Room</title>
+  <link rel="stylesheet" href="/assets/app.css" />
+</head>
+<body class="bg-lobby">
+  <main class="page lobby-layout">
+    <section class="card">
+      <p class="tag">ROOM</p>
+      <h1 id="roomTitle" class="title">Room -</h1>
+      <p id="roomMeta" class="hint">Loading...</p>
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <button id="startBtn" class="btn" style="display:none;">Start Game</button>
+        <button id="backLobbyBtn" class="btn ghost">Back Lobby</button>
+      </div>
+      <pre id="msgBox" class="err"></pre>
+    </section>
+
+    <section class="card">
+      <p class="tag">MEMBERS</p>
+      <div id="memberList"></div>
+    </section>
+  </main>
+  <script src="/assets/room.js"></script>
+</body>
+</html>

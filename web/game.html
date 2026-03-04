@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puzzle Bubble - Game</title>
+  <link rel="stylesheet" href="/assets/app.css" />
+</head>
+<body class="bg-lobby">
+  <main class="page game-page">
+    <section class="card game-card">
+      <div class="game-head">
+        <p class="tag">PUZZLE BUBBLE</p>
+        <p id="gameMeta" class="hint"></p>
+      </div>
+      <canvas id="gameCanvas" width="560" height="760"></canvas>
+      <div class="game-toolbar">
+        <span id="stateText" class="hint">Syncing...</span>
+        <span id="scoreText" class="hint">Score: 0</span>
+        <button id="backRoomBtn" class="btn mini ghost">Back Room</button>
+      </div>
+    </section>
+
+    <aside class="card side-panel">
+      <p class="tag">OTHER PLAYERS</p>
+      <div id="othersWrap" class="others-wrap"></div>
+    </aside>
+  </main>
+  <script src="/assets/game.js"></script>
+</body>
+</html>

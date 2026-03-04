@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package match;
+
+option go_package = "game-gateway/api;matchpb";
+
+import "google/protobuf/struct.proto";
+
+service MatchService {
+  rpc HandleGatewayMessage(google.protobuf.Struct) returns (google.protobuf.Struct);
+}

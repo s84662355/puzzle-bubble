@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package auth;
+
+option go_package = "game-gateway/api;authpb";
+
+import "google/protobuf/struct.proto";
+
+service AuthService {
+  rpc Login(google.protobuf.Struct) returns (google.protobuf.Struct);
+  rpc ValidateToken(google.protobuf.Struct) returns (google.protobuf.Struct);
+  rpc RefreshToken(google.protobuf.Struct) returns (google.protobuf.Struct);
+}

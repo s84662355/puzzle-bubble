@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puzzle Bubble - 大厅</title>
+  <link rel="stylesheet" href="/assets/app.css" />
+</head>
+<body class="bg-lobby">
+  <main class="page lobby-layout">
+    <section class="card profile">
+      <p class="tag">PLAYER</p>
+      <h1 id="playerName" class="title">-</h1>
+      <p class="hint">已登录，准备进入对局。</p>
+      <button id="logoutBtn" class="btn ghost">退出登录</button>
+    </section>
+
+    <section class="card create-room">
+      <p class="tag">CREATE ROOM</p>
+      <div class="form grid2">
+        <input id="roomName" type="text" placeholder="房间名，例如：休闲场01" />
+        <input id="maxPlayers" type="number" min="2" max="8" value="2" />
+      </div>
+      <button id="createBtn" class="btn">创建房间</button>
+      <pre id="msgBox" class="err"></pre>
+    </section>
+
+    <section class="card room-list">
+      <div class="list-head">
+        <p class="tag">LOBBY ROOMS</p>
+        <button id="refreshBtn" class="btn mini">刷新</button>
+      </div>
+      <div id="roomList"></div>
+    </section>
+  </main>
+  <script src="/assets/lobby.js"></script>
+</body>
+</html>

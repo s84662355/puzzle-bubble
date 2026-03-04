@@ -1,0 +1,17 @@
+{
+  "listen_tcp_addr": ":7000",
+  "grpc_listen_addr": ":18080",
+  "ws_listen_addr": ":18081",
+  "auth_grpc_addr": "127.0.0.1:19090",
+  "lobby_grpc_addr": "127.0.0.1:19100",
+  "match_grpc_addr": "127.0.0.1:19200",
+  "room_grpc_addr": "127.0.0.1:19400",
+  "max_packet_size": 65536,
+  "auth_timeout": "10s",
+  "token_verify_timeout": "2s",
+  "idle_timeout": "90s",
+  "read_timeout": "30s",
+  "write_timeout": "10s",
+  "shutdown_timeout": "10s",
+  "log_level": "INFO"
+}

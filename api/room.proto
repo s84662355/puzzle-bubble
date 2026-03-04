@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package room;
+
+option go_package = "game-gateway/api;roompb";
+
+import "google/protobuf/struct.proto";
+
+service RoomService {
+  rpc HandleGatewayMessage(google.protobuf.Struct) returns (google.protobuf.Struct);
+}

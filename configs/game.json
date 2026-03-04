@@ -1,0 +1,10 @@
+{
+  "ws_listen_addr": ":19500",
+  "grpc_listen_addr": ":19400",
+  "public_ws_addr": "127.0.0.1:19500",
+  "auth_grpc_addr": "127.0.0.1:19090",
+  "token_verify_timeout": "2s",
+  "heartbeat_timeout": "5s",
+  "room_frame_tick": "50ms",
+  "shutdown_timeout": "10s"
+}

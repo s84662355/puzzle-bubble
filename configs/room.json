@@ -1,0 +1,5 @@
+{
+  "listen_addr": ":19300",
+  "shutdown_timeout": "10s",
+  "frame_interval": "50ms"
+}

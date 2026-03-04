@@ -1,0 +1,7 @@
+{
+  "listen_addr": ":8099",
+  "db_path": "./mono.db",
+  "token_ttl": "24h",
+  "heartbeat_timeout": "5s",
+  "shutdown_timeout": "10s"
+}

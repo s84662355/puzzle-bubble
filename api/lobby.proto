@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package lobby;
+
+option go_package = "game-gateway/api;lobbypb";
+
+import "google/protobuf/struct.proto";
+
+service LobbyService {
+  rpc HandleGatewayMessage(google.protobuf.Struct) returns (google.protobuf.Struct);
+}

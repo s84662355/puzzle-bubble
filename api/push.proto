@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package gateway;
+
+option go_package = "game-gateway/api;gatewaypb";
+
+import "google/protobuf/struct.proto";
+
+service GatewayPushService {
+  rpc PushToPlayer(google.protobuf.Struct) returns (google.protobuf.Struct);
+  rpc PushToSession(google.protobuf.Struct) returns (google.protobuf.Struct);
+  rpc GetNodeInfo(google.protobuf.Struct) returns (google.protobuf.Struct);
+}

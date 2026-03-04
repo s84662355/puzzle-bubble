@@ -1,0 +1,8 @@
+{
+  "listen_addr": ":8088",
+  "auth_grpc_addr": "127.0.0.1:19090",
+  "room_grpc_addr": "127.0.0.1:19400",
+  "game_control_grpc_addr": "127.0.0.1:19400",
+  "gateway_push_grpc_addr": "127.0.0.1:18080",
+  "shutdown_timeout": "10s"
+}
